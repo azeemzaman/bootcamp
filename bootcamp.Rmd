@@ -1,0 +1,25 @@
+---
+title: "Markdown"
+output: html_document
+---
+Load the following packages for loading data (`curl`), data wrangling (`dplyr`), and data visualization (`ggplot2`).
+```{r}
+library(curl)
+library(dplyr)
+library(ggplot2)
+```
+Load the data
+```{r}
+gap <- read.csv(curl("http://bit.ly/gap_data_upd"))
+```
+Create a new data subset
+```{r}
+eu_5267 <- gap %>%
+  filter(continent == "Europe", year %in% c(1952, 1967))
+ggplot(data = eu_5267, aes(x = gdpPercap, y = lifeExp, color = factor(year))) + geom_point()
+
+```
+
+
+
+
