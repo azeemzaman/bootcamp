@@ -2,4 +2,4 @@
 
 Duke StatSci Computing Bootcamp 2015
 
-Author - Azeem Zaman (azeem.zaman@stat.duke.edu)
+Author - Azeem Zahid Zaman (azeem.zaman@duke.edu)
